@@ -8,12 +8,12 @@ _1 TILs and counting..._
 
         ---
         ### Categories
-        * [Python_tils](#Python_Tils)
+        * [Python](#Python)
 
         ---
-        ### Python_tils
+        ### Python
 
-- [Python Zen](Python_Tils\Python_Zen.md)
+- [Python Zen](Python\Python_Zen.md)
 
 
 ## About
