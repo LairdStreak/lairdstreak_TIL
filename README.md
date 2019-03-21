@@ -5,10 +5,15 @@ variety of languages and technologies. These are things that don't really
 warrant a full blog post.
 
 _1 TILs and counting..._
----### Categories* [Python til](#Python TIL)
----### Python til
 
-- [## Python Zen](Python TIL\Python_Zen.md)
+        ---
+        ### Categories
+        * [Python_tils](#Python_Tils)
+
+        ---
+        ### Python_tils
+
+- [Python Zen](Python_Tils\Python_Zen.md)
 
 
 ## About
