@@ -99,7 +99,7 @@ def print_file(category_names, count, categories):
             file_.write('\n')
             tils = categories[category]
             for (title, filename) in sorted(tils):
-                file_.write('- [{0}]({1})\n'.format(title, filename))
+                file_.write('- [{0}]({1})\n'.format(title, filename.replace('\\', '/')))
             file_.write('\n')
 
         file_.write(FOOTER)

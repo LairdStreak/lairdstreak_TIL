@@ -13,7 +13,7 @@ _1 TILs and counting..._
         ---
         ### Python
 
-- [Python Zen](Python\Python_Zen.md)
+- [Python Zen](Python/Python_Zen.md)
 
 
 ## About
