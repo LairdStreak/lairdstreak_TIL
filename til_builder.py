@@ -54,6 +54,8 @@ def get_title(til_file):
             line = line.strip()
             if line.startswith('#'):
                 return line[1:].lstrip()  # text after # and whitespace
+            else:
+                return None    
 
 
 def get_tils(category):
@@ -69,6 +71,7 @@ def get_tils(category):
 
 
 def get_category_dict(category_names):
+    ''' Count and return a dictionary of category'''
     categories = {}
     count = 0
     for category in category_names:
