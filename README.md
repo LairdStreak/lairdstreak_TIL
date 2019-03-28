@@ -3,9 +3,10 @@
 > Today I Learned
 A collection of write-ups on small things I learn day to day.
 
-_2 TILs and counting..._
+_3 TILs and counting..._
 ## Python TILs 
 
+- [Iterate With enumerate Instead of range](Python/Iterate_with_enumerate_InsteadofRange.md)
 - [Python  Dictionaries Cheat sheet.](Python/Python_DictionariesCheetSheet.md)
 - [Python Zen](Python/Python_Zen.md)
 
