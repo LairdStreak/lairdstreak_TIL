@@ -11,23 +11,27 @@ from __future__ import print_function
 import os
 
 HEADER = '''# TIL
+
 > Today I Learned
-A collection of concise write-ups on small things I learn day to day across a
-variety of languages and technologies. These are things that don't really
-warrant a full blog post.
+A collection of write-ups on small things I learn day to day.
 '''
 
 FOOTER = '''
 ## About
+
 I shamelessly stole the above idea from
 [jima80525/til](https://github.com/jima80525/til) who claims to have stolen
 it from others.
+
 ## Other TIL Collections
-* [jima80525/til](https://github.com/jima80525/til)
-* [Today I Learned by Hashrocket](https://til.hashrocket.com)
-* [jwworth/til](https://github.com/jwworth/til)
-* [thoughtbot/til](https://github.com/thoughtbot/til)
+
+- [jima80525/til](https://github.com/jima80525/til)
+- [Today I Learned by Hashrocket](https://til.hashrocket.com)
+- [jwworth/til](https://github.com/jwworth/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
+
 ## License
+
 &copy; 2019--- Laird Streak
 This repository is licensed under the GNU license. See `LICENSE` for
 details.'''
@@ -37,7 +41,7 @@ def get_list_of_categories():
     ''' Walk the current directory and get a list of all subdirectories at that
     level.  These are the "categories" in which there are TILs.'''
     dirs = [x for x in os.listdir('.') if os.path.isdir(x) and
-            '.git' not in x]
+            '.git' not in x and '.vs' not in x]
     return dirs
 
 
@@ -50,6 +54,8 @@ def get_title(til_file):
             line = line.strip()
             if line.startswith('#'):
                 return line[1:].lstrip()  # text after # and whitespace
+            else:
+                return None    
 
 
 def get_tils(category):
@@ -65,6 +71,7 @@ def get_tils(category):
 
 
 def get_category_dict(category_names):
+    ''' Count and return a dictionary of category'''
     categories = {}
     count = 0
     for category in category_names:
@@ -81,21 +88,9 @@ def print_file(category_names, count, categories):
         file_.write('\n')
         file_.write('_{0} TILs and counting..._'.format(count))
         file_.write('\n')
-        file_.write('''
-        ---
-        ### Categories
-        ''')
-        # print the list of categories with links
-        for category in sorted(category_names):
-            file_.write('* [{0}](#{1})\n'.format(category.capitalize(),
-                                                 category))
         # print the section for each category
-        file_.write('''
-        ---
-        ''')
-
         for category in sorted(category_names):
-            file_.write('### {0}\n'.format(category.capitalize()))
+            file_.write('## {0} TILs \n'.format(category.capitalize()))
             file_.write('\n')
             tils = categories[category]
             for (title, filename) in sorted(tils):
