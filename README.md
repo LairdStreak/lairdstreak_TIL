@@ -3,7 +3,11 @@
 > Today I Learned
 A collection of write-ups on small things I learn day to day.
 
-_3 TILs and counting..._
+_4 TILs and counting..._
+## Batch TILs 
+
+- [Git With Batfile](Batch/gitwithbatch.md)
+
 ## Python TILs 
 
 - [Iterate With enumerate Instead of range](Python/Iterate_with_enumerate_InsteadofRange.md)
