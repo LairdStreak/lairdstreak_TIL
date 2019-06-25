@@ -1,4 +1,4 @@
-﻿# Using Basic Auth. and Decorators in Python's Flask
+﻿# Using Basic Auth and Decorators in Python's Flask.
 
 ## Project Setup
 

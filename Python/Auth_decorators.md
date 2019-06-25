@@ -1,5 +1,4 @@
-﻿
-# Using Python Decorators for Authentication
+﻿# Using Python Decorators for Authentication.
 
 ### A Refresher
 
